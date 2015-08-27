@@ -1,4 +1,4 @@
-base=moderna-a-2015
+base=f2b-2015
 version=guia-01
 name=${base}-${version}
 all:

@@ -1,0 +1,134 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[spanish]{babel}
+\hyphenation{}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage[pdftex,colorlinks=true, pdfstartview=FitH, linkcolor=blue,
+citecolor=blue, urlcolor=blue, pdfpagemode=UseOutlines, pdfauthor={H. Asorey},
+pdftitle={Física II B - 2015}]{hyperref}
+\usepackage[adobe-utopia]{mathdesign}
+
+\hoffset -1.23cm
+\textwidth 16.5cm
+\voffset -2.0cm
+\textheight 26.0cm
+
+%----------------------------------------------------------------
+\begin{document}
+\title{
+{\normalsize{Universidad Nacional de Río Negro - Profesorados de Física}}\\
+Física II B 2015\\MAS: Movimiento Oscilatorio Simple\\}
+\author{Asorey-Cutsaimanis}
+\date{Práctica grupal, formen grupos de 3 personas}
+\maketitle
+
+\section{Didáctica}
+
+Elija uno de los ejercicios de la sección ``Problemas'' (no repetir entre los
+distintos grupos) para explicarlo en el pizarrón al resto de la clase. 
+
+\section{Para pensar (entregar todas)}
+
+\begin{enumerate}
+	\item Un objeto se mueve con MAS de amplitud A en el extremo de un resorte.
+		Si la amplitud se duplica, ¿qué sucede con la distancia total que el
+		objeto recorre en un periodo? ¿Qué sucede con el periodo? ¿Qué sucede
+		con la rapidez máxima del objeto?
+	\item Una caja de masa $M$ que contiene un piedra de masa $m<M$ se conecta
+		a un resorte horizontal ideal y oscila sobre una mesa de aire sin
+		fricción. El sistema es desplazado de su posición de equilibrio, y la
+		caja comienza a oscilar con amplitud $A$. En uno de los ciclos, cuando
+		la caja alcanza nuevamente la posición $+A$, la piedra se sale por
+		arriba sin perturbar la caja. Las siguientes características del MAS,
+		¿aumentarán, disminuirán o permanecerán igual en el movimiento
+		subsecuente de la caja (¡justifique!)?: a) Frecuencia
+		angular; b) Período; c) Amplitud; d) Energía cinética máxima de la
+		caja; e) Velocidad máxima  de la caja.
+	\item Un péndulo elástico vertical se monta en el interior de un ascensor.
+		¿Qué sucede (justifique) con el periodo de oscilación (aumenta,
+		disminuye, no cambia) cuando el elevador:
+		\begin{enumerate}
+			\item acelera hacia arriba con una aceleración
+				$a=3.0$\,m\,s$^{-2}$?; 
+			\item se mueve hacia abajo con una velocidad $v=2.0$\,m\,s$^{-1}$
+				constante?;
+			\item acelera hacia abajo con una aceleración $a=3.0$\,m\,s$^{-2}$?
+		\end{enumerate}
+	\item Supongo que el péndulo elástico de la pregunta anterior se monta en
+		la estación espacial. ¿Se observará algún cambio en la frecuencia del
+		mismo? ¿Y si estuviera en la Luna? Justifique.
+	\item ¿En qué punto del movimiento de un péndulo simple es máxima la
+		tensión en el cordón? ¿Y mínima? En cada caso, explique su
+		razonamiento.
+	\item En el dispositivo armado para estudiar el movimiento oscilatorio
+		amortiguado, con una pesa colgada mediante un alambre de un péndulo
+		elástico y sumergida en un líquido viscoso, ¿en que momento la tensión
+		sobre el alambre que sostiene la pesa sumergida es máxima? ¿en qué
+		momento es mínima? ¿en algún momento se anula la tensión? Justifique.
+	\item Cuando se sube a una balanza de resortes en la farmacia, ¿qué tipo de
+		movimiento describe la punta de la aguja antes de detenerse y marcar su
+		peso? Justifique.
+\end{enumerate}
+
+\section{Problemas}
+
+Entregue al menos cuatro de los siguientes ejercicios. Para hacer los gráficos
+puede usar excel, gnuplot o el sistema que le resulte más conveniente. 
+
+\begin{enumerate}
+	\item La punta de un diapasón efectúa 440 vibraciones completas en
+		$0.25$\,s. Calcule la frecuencia $f$, la frecuencia angular $\omega$ y
+		el periodo de oscilación. 
+	\item Se arma un péndulo vertical con un resorte con $k=50$\,N\,m$^{-1}$
+		del cual cuelga una masa $m=0.102$\,kg. A $t=0$, la masa se encuentra
+		en la posición $y=0.02$\,m moviéndose hacia arriba, siendo la amplitud
+		del MAS igual a $0.04$\,m. Entonces: 
+		\begin{enumerate}
+			\item Usando consideraciones energéticas, calcule la velocidad a $t=0$. 
+			\item Suponiendo una solución del tipo $y(t)=A \sin(\omega t +
+				\varphi)$, verifique que esta propuesta es solución de la
+				ecuación de movimiento, obtenga las expresiones que describen
+				la velocidad $v(t)$ y la aceleración $a(t)$ y los valores de
+				$A$, $\omega$ y $\varphi$. Luego haga los gráficos que
+				describan $y(t)$, $v(t)$ y $a(t)$ para un tiempo total igual a
+				tres periodos del MAS.
+		\end{enumerate}
+	\item Se construye un péndulo horizontal colocando un carro de masa $m$
+		sobre un riel de manera que el rozamiento entre el riel y el carro
+		resulten despreciables. En cada punta del carrito se fija uno de los
+		extremos de un resorte, y el otro extremo se fija, de manera que ambos
+		resortes estén en tensión. Suponga que las constantes elásticas de los
+		resortes son $k_1$ y $k_2$, los cuales a priori podrían no ser iguales.
+		Entonces:
+		\begin{enumerate}
+			\item Suponiendo que $k_1 = k_2$, dibuje el diagrama de cuerpo
+				libre del carrito y obtenga la posición de equilibro del carro
+				tomando como origen del sistema de referencia uno de los
+				extremos fijos de uno de los resortes. 
+			\item Sitúe un nuevo sistema de referencia en la posición de
+				equilibrio del sistema, y ahora perturbe al sistema desplazando
+				al sistema a la posición $x=x_0$ en el instante $t=0$.
+				Determine el período de oscilación del péndulo y la velocidad
+				máxima del carro y la energía mecánica total, suponiendo que el
+				carro tiene una masa $m=204$\,g y $k_1=k_2=30$\,N\,m$^{-1}$.
+			\item Suponga ahora que $k_1 > k_2$. Obtenga la nueva posición de
+				equilibrio y la ecuación que da el periodo de oscilación del
+				péndulo en función de $m$, $k_1$ y $k_2$. 
+		\end{enumerate}
+	\item Del péndulo del ejercicio 2, se cuelga una nueva pesa de masa
+		$m=0.051$\,kg y densidad $\rho=7.8$\,g\,cm$^{-3}$ de manera que la
+		misma quede sumergida en el seno de un líquido viscoso de densidad
+		$\rho_l=0.8$\,g\,cm$^{-3}$ con constante de amortiguamiento $b$.
+		Encuentre para este sistema el valor $b_c$ que produce un
+		amortiguamiento crítico, y haga un gráfico de $y(t)$ para los
+		siguientes casos: 
+		\begin{enumerate}
+			\item $b=b_c / 2$ para una duración total de $10$ periodos (debe
+				calcular $\omega'$)
+			\item $b=b_c$ para la misma duración total que el anterior
+		\end{enumerate}
+\end{enumerate}
+
+\end{document}
+%%%%
