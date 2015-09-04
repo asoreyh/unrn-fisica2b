@@ -1,0 +1,18 @@
+  A=0.05; k=5.; m=0.13; w=sqrt(k/m); T=2*pi/w; print T
+  y(t)=A*cos(w*t)
+  v(t) = -A * w * sin(w*t)
+  a(t) = -A * w**2 * cos(w*t)
+  set xrange [0:3*T]
+  set grid
+  set format x "%.1f"
+  set format y "%0.1f"
+  set format y "%0.2f"
+  plot v(x) lw 3 t "y(t) = 1.5 cos ({/Symbol w} t)"
+  plot y(x) lw 3 t "y(t) = 1.5 cos ({/Symbol w} t)"
+  set xlabel "Tiempo t (s)"
+  set ylabel "Posición y(t)"
+  rep
+  plot v(x) lw 3 lc 2 t "v(t)"
+  set ylabel "Velocidad v(t)"
+  rep
+  set ylabel "Velocidad v(t) (m/s)"
