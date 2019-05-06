@@ -1,6 +1,40 @@
-k=2.
-w=1.
-y(A,x,t)=A*cos(k*x-w*t)
-set xrange [0:4*pi]
+do for [i=1:1] {
+
+k1=i/2.
+w1=1.
+y1(A1,x,t)=A1*cos(k1*x-w1*t)
+k2=i/2.
+w2=1.
+y2(A2,x,t)=A2*cos(-k2*x-w2*t)
+k3=2*i/2.
+w3=1.
+y3(A3,x,t)=A3*cos(k3*x-w3*t)
+k4=2*i/2.
+w4=1.
+y4(A4,x,t)=A4*cos(-k4*x-w4*t)
+k5=3*i/2.
+w5=1.
+y5(A5,x,t)=A5*cos(k5*x-w5*t)
+k6=3*i/2.
+w6=1.
+y6(A6,x,t)=A6*cos(-k6*x-w6*t)
+set xrange [0:2*pi]
+set yrange [-2:2]
 set grid
-s=20.; do for [t = 0:20*s] {plot y(2,x,t/s) w l lw 3; replot y(2,2,t/s) w p ps 2 pt 6 ; pause 0.1 }
+#s=20.; do for [t = 0:20*s] {plot y(2,x,t/s) w l lw 3; replot y(2,2,t/s) w p ps 2 pt 6 ; pause 0.1 }
+s=20.; do for [t = 0:40*s] {
+	plot \
+	0 w l lw 2 lc 0,\
+	(y5(1,x,t/s)+y6(-1,x,t/s)) w l lw 6 lc 5
+ 	pause 0.05 
+}
+}
+exit
+
+	y1(1,x,t/s) w l lw 2 lc 1,\
+	y2(-1,x,t/s) w l lw 2 lc 2,\
+	y3(1,x,t/s) w l lw 2 lc 3,\
+	y4(-1,x,t/s) w l lw 2 lc 4,\
+	0.7*y1(1,x,t/s)+0.7*y2(-1,x,t/s)+0.2*y3(1,x,t/s)+0.2*y4(-1,x,t/s)+0.1*y5(1,x,t/s)+0.1*y6(-1,x,t/s) w l lw 6 lc 8;
+
+#s=20.; do for [t = 0:20*s] {plot y1(2,x,t/s),y2(1,x,t/s),y1(2,x,t/s)+y2(1,x,t/s)  w l lw 3; pause 0.1 }

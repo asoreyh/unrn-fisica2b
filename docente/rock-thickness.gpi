@@ -1,0 +1,51 @@
+  0.90625 0.8353  0.3137  0.2588,\
+  0.9375  0.7961  0.2431  0.2196,\
+  0.96875 0.7529  0.1569  0.1843,\
+  1       0.7059  0.0157  0.1490\
+  ) 
+  rset
+  rsetre
+  load 'palette.gpi'
+  splot (x**2+y**2) w pm3d
+  q
+  set datafile missing "nan"
+  set datafile missing "NaN"
+  plot 'matrix-thikness.txt' u 1:2
+  plot 'matrix-thikness.txt' matrix with image
+  load 'matlab.gpi'
+  re
+  load '
+  load 'sequential/YlGnBu.plt'
+  load 'diverging/RdYlGn.plt''
+  load 'diverging/RdYlGn.plt'
+  load 'diverging/BrBG.plt'
+  load 'diverging/
+  load 'default.plt'
+  ewawr
+  reset
+  load 'default.gpi'
+  load 'sequential/GnBu.plt'
+  set negative
+  set palette negative
+  load 'diverging/RdYlBu.plt'
+  rep
+  plot 'matrix-thikness.txt' matrix with image t "Etna - 2012"
+  set xlabel "related to azimuth"
+  set ylabel "related to zenith"
+  set ylabel "related to elevation"
+  set grid
+  set xrange [0:32]
+  set xrange [0:31]
+  set yrange [0:26]
+  set yrange [0:25]
+  set cblabel "Rock Thickness"
+  rep
+  set term png transparent font "arial, 20"; set out "rock-thikness.png"; rep; set out; set term x11 
+  set term png transparent font "arial, 14"; set out "rock-thikness.png"; rep; set out; set term x11 
+  set term png size 800,800 transparent font "arial, 14"; set out "rock-thikness.png"; rep; set out; set term x11 
+  set term png size 800,600 transparent font "arial, 14"; set out "rock-thikness.png"; rep; set out; set term x11 
+  history 2"rock-thickness.gpi"
+  q
+  load 'funcion-de-onda-2d.gpi'
+  load 'funcion-de-onda.gpi'
+  history 50 "rock-thickness.gpi"

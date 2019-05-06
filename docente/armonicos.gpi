@@ -1,0 +1,17 @@
+set xrange [0:2*pi]
+set yrange [-5:5]
+set grid
+unset key
+yp(a,i,x,t)=a*cos(i*x/2.-t)
+ym(a,i,x,t)=-a*cos(-i*x/2.-t)
+dur=20.
+s=10.
+arm=3;
+do for [t = 0:dur*s] {
+	plot 0 w l lw 2 lc 0, \
+	for [i=1:arm] yp(1, i, x, t/s) w l lw 1 lc 1, \
+	for [i=1:arm] ym(1, i, x, t/s) w l lw 1 lc 3, \
+	sum [i=1:arm] (yp(1, i, x, t/s) + ym(1, i, x, t/s)) w l lw 6 lc 7
+ 	pause 0.1
+}
+exit
