@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/40104115.svg)](https://doi.org/10.5281/zenodo.14589674)
+
 # Física II B - Prof. de Física - UNRN - 2015
 **(C) H. Asorey y A. Cutsaimanis**
 
